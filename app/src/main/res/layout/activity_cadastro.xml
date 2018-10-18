@@ -9,7 +9,7 @@
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.0"
-    android:background="#836FFF"
+    android:background="#6c237b"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintVertical_bias="0.0">
@@ -23,7 +23,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="#836FFF"
+        android:background="#6c237b"
         app:layout_constraintVertical_bias="0.0">
 
         <EditText
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="52dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:ems="10"
@@ -41,7 +41,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/floaActionBtnSalavr" />
+            app:layout_constraintTop_toBottomOf="@+id/imgBtnVoltar" />
 
         <EditText
             android:id="@+id/editTEmail"
@@ -101,33 +101,30 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
-            android:background="#4682B4"
+            android:background="#e4dde8"
+            android:elevation="5dp"
             android:text="@string/hint_salvar"
             android:textColor="#0000CD"
             android:textSize="23sp"
-            android:elevation="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTConSenha" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floaActionBtnSalavr"
-            android:layout_width="45dp"
-            android:layout_height="43dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
+        <ImageButton
+            android:id="@+id/imgBtnVoltar"
+            android:background="#6c237b"
+            android:layout_width="42dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
-            android:focusable="true"
-            android:gravity="center"
-            app:backgroundTint="#836FFF"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintHorizontal_bias="0.02"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="?attr/actionModeCloseDrawable"
-            tools:srcCompat="?attr/actionModeCloseDrawable" />
+            app:srcCompat="?attr/actionModeCloseDrawable" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

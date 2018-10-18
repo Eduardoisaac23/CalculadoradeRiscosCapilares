@@ -39,4 +39,5 @@
     <string name="todo">TODO</string>
     <string name="rb_nao">Não</string>
     <string name="texV_tipo_de_cabelo_natural">Tipo de cabelo natural?</string>
+    <string name="text_sexo">Sexo</string>
 </resources>

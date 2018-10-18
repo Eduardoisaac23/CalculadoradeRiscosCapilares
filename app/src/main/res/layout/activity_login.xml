@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#836FFF"
+    android:background="#6c237b"
     tools:context=".Activity.LoginActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -12,7 +12,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#836FFF"
+        android:background="#6c237b"
         tools:context=".Activity.LoginActivity">
 
         <EditText
@@ -60,7 +60,7 @@
             android:layout_marginTop="36dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
-            android:background="#00C5CD"
+            android:background="#c8add2"
             android:elevation="5dp"
             android:text="@string/btn_logar"
             android:textSize="23sp"

@@ -38,9 +38,10 @@ public class LoginActivity extends AppCompatActivity {
         editTEmail = findViewById(R.id.editTEmail);
         editTSenha = findViewById(R.id.editTSenha);
         textVCadastrar = findViewById(R.id.textVCadastrar);
-        textVRecSenha = findViewById(R.id.editTConSenha);
+        textVRecSenha = findViewById(R.id.textVRecSenha);
         btnLogar = findViewById(R.id.btnLogar);
 
+        //chamar tela de Cadastro
         textVCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,6 +49,16 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        // Chamar tela de Recuperar senha
+        textVRecSenha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent recuperar  = new Intent( LoginActivity.this, RecuperarSenhaActivity.class);
+                startActivity(recuperar);
+            }
+        });
+
+
 
         btnLogar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,8 +76,6 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Preencha os campos email e senha.", Toast.LENGTH_LONG).show();
                 }
 
-
-
             }
         });
 
@@ -80,22 +89,22 @@ public class LoginActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
 
-                    telaHistorico();
+
 
                     Toast.makeText(LoginActivity.this, "login efetuado com sucesso.",Toast.LENGTH_LONG).show();
+                    abrirŧelaMenu();
+
                 }else{
                     Toast.makeText(LoginActivity.this, "Usuário ou senha inválidos.",Toast.LENGTH_LONG).show();
                 }
             }
         });
+
     }
 
-    private void telaHistorico(){
-        Intent intent = new  Intent(LoginActivity.this, HistoricoActivity.class);
-        startActivity(intent);
-        finish();
-  }
-
-
+public void abrirŧelaMenu(){
+        Intent intentabrirŧelaMenu = new Intent(LoginActivity.this, MenuActivity.class);
+        startActivity(intentabrirŧelaMenu);
+}
 
 }

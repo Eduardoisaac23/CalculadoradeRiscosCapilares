@@ -20,6 +20,10 @@ public class MenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
 
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,8 +37,9 @@ public class MenuActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
 
-                Intent intentvoltar = new  Intent(MenuActivity.this, HistoricoActivity.class);
-                startActivity(intentvoltar);
+                Intent intentProximo = new  Intent(MenuActivity.this, SexoFragment.class);
+                startActivity(intentProximo);
+                //finish();
                 //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         //.setAction("Action", null).show();
             }
@@ -48,6 +53,7 @@ public class MenuActivity extends AppCompatActivity
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override

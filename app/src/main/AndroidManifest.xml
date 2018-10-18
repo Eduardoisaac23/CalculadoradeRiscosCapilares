@@ -22,7 +22,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity.LoginActivity" />
-        <activity android:name=".Activity.HistoricoActivity" />
         <activity android:name=".Activity.RecuperarSenhaActivity" />
         <activity
             android:name=".Activity.MenuActivity"

@@ -8,11 +8,12 @@
     tools:context=".Activity.MenuActivity"
     tools:showIn="@layout/app_bar_menu">
 
+
     <fragment
         android:id="@+id/fragment"
-        android:name="com.softwaresa.salaomais.Activity.ProcedimentosFragment"
-        android:layout_width="379dp"
-        android:layout_height="503dp"
+        android:name="com.softwaresa.salaomais.Activity.HistoricoFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -23,5 +24,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout="@layout/fragment_procedimentos" />
+        tools:layout="@layout/fragment_historico2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
